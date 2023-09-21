@@ -6,7 +6,6 @@ import 'package:intl/intl.dart';
 import 'package:money_record/config/app_color.dart';
 import 'package:money_record/config/app_format.dart';
 import 'package:money_record/presentation/controller/c_detail_history.dart';
-import 'package:money_record/presentation/controller/users_controller.dart';
 
 class DetailHistory extends StatefulWidget {
   const DetailHistory({
@@ -95,7 +94,7 @@ class _DetailHistoryState extends State<DetailHistory> {
               const SizedBox(height: 8),
               Text(
                 AppFormat.currency(ctx.data.total!),
-                style: Theme.of(context).textTheme.headline4!.copyWith(
+                style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                       color: AppColor.appPrimary,
                     ),
               ),

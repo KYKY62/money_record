@@ -235,7 +235,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headline4!
+                                    .headlineMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.bold,
                                         color: AppColor.appSecondary),
@@ -275,9 +275,9 @@ class _HomePageState extends State<HomePage> {
                                   bottomLeft: Radius.circular(8),
                                 ),
                               ),
-                              child: Row(
+                              child: const Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
-                                children: const [
+                                children: [
                                   Text(
                                     "Selengkapnya",
                                     style: TextStyle(
@@ -384,7 +384,7 @@ class _HomePageState extends State<HomePage> {
                                     "${homeController.percentIncome}%",
                                     style: Theme.of(context)
                                         .textTheme
-                                        .headline4!
+                                        .headlineMedium!
                                         .copyWith(
                                           color: AppColor.appPrimary,
                                         ),

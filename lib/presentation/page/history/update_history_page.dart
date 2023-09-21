@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:d_info/d_info.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
@@ -9,7 +8,6 @@ import 'package:money_record/config/app_format.dart';
 import 'package:money_record/data/source/source_history.dart';
 import 'package:money_record/presentation/controller/c_update_history.dart';
 import 'package:money_record/presentation/controller/users_controller.dart';
-import 'package:money_record/presentation/controller/c_add_history.dart';
 import 'package:money_record/presentation/widget/drawer_title_widget.dart';
 
 class UpdateHistoryPage extends StatefulWidget {
@@ -196,7 +194,7 @@ class _UpdateHistoryPageState extends State<UpdateHistoryPage> {
               Obx(() {
                 return Text(
                   AppFormat.currency("${cUpdateHistory.total}"),
-                  style: Theme.of(context).textTheme.headline6!.copyWith(
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
                         color: AppColor.appPrimary,
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
@@ -219,7 +217,7 @@ class _UpdateHistoryPageState extends State<UpdateHistoryPage> {
                 child: Center(
                   child: Text(
                     "Submit",
-                    style: Theme.of(context).textTheme.headline6!.copyWith(
+                    style: Theme.of(context).textTheme.titleLarge!.copyWith(
                           color: AppColor.appWhite,
                           fontWeight: FontWeight.bold,
                         ),

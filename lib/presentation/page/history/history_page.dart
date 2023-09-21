@@ -10,10 +10,8 @@ import 'package:money_record/config/app_format.dart';
 import 'package:money_record/data/model/history.dart';
 import 'package:money_record/data/source/source_history.dart';
 import 'package:money_record/presentation/controller/c_history.dart';
-import 'package:money_record/presentation/controller/c_income_outcome.dart';
 import 'package:money_record/presentation/controller/users_controller.dart';
 import 'package:money_record/presentation/page/history/detail_history_page.dart';
-import 'package:money_record/presentation/page/history/update_history_page.dart';
 
 class HistoryPage extends StatefulWidget {
   const HistoryPage({

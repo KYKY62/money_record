@@ -171,7 +171,7 @@ class AddHistoryPage extends StatelessWidget {
               Obx(() {
                 return Text(
                   AppFormat.currency("${cAddHistory.total}"),
-                  style: Theme.of(context).textTheme.headline6!.copyWith(
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
                         color: AppColor.appPrimary,
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
@@ -194,7 +194,7 @@ class AddHistoryPage extends StatelessWidget {
                 child: Center(
                   child: Text(
                     "Submit",
-                    style: Theme.of(context).textTheme.headline6!.copyWith(
+                    style: Theme.of(context).textTheme.titleLarge!.copyWith(
                           color: AppColor.appWhite,
                           fontWeight: FontWeight.bold,
                         ),
